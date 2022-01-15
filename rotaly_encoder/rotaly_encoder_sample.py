@@ -3,8 +3,8 @@
 import time
 import RPi.GPIO as GPIO_RPi
 # GPIO pin assign
-SW_ENCA= 22
-SW_ENCB= 23
+SW_ENCA= 22  # GPIO22 PhysicalPIN_No:15 in RPi3
+SW_ENCB= 23  # GPIO23 PhysicalPIN_No:16 in RPi3
 
 def callback(callback):
     re = (GPIO_RPi.input(SW_ENCA) &1)
